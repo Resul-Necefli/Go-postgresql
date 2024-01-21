@@ -77,7 +77,7 @@ func GetResultsFromDB() {
 	}
 
 	if err := rows.Err(); err != nil {
-		log.Fatal(err)
+	log.Fatal(err)
 	}
 }
 
@@ -85,8 +85,9 @@ func GetResultsFromDB() {
 func main() {
 	InitDB()
 	defer db.Close()
-	Insertgo.Into()
 	Updatesql()
 	Sqll.Deletesql()
 	GetResultsFromDB()
+	Insertgo.Into()
 }
+
